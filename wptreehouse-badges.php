@@ -57,7 +57,11 @@ function wptreehouse_badges_option_page(){
 	require('inc/options-page-wrapper.php');
 }
 
+function wptreehouse_badges_styles(){
+	wp_enqueue_style( 'wptreehouse_badges_styles', plugins_url('wp_treehouse_badges/wptreehouse-badges.css') );
+}
 
+add_action( 'admin_head', 'wptreehouse_badges_styles');
 
 
 ?>		
