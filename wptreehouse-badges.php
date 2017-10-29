@@ -14,7 +14,7 @@ License: GPLv2 or later
 	Assign Global Variables
 */
 
-	$plugin_url = WP_PLUGIN_URL . '/wptreehouse-badges';
+	$plugin_url = WP_PLUGIN_URL . '/wp_treehouse_badges';
 
 /*
 Add a link to our plugin in the admin menu
@@ -53,6 +53,7 @@ function wptreehouse_badges_option_page(){
 
 	global $plugin_url;
 	
+	// require options page wrapper for wordpress admin style page
 	require('inc/options-page-wrapper.php');
 }
 
